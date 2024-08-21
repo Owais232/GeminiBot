@@ -6,7 +6,7 @@ type Message = {
   text: string;
   sender: "user" | "gemini";
 };
-const GEMINI_API_KEY = "AIzaSyCoUrY_KJ-qHzDEuCm9ohcbwd2utYdQ6V0"; 
+const GEMINI_API_KEY = "Your Api Key paste here to run the code"; 
 
 const ChatBot = () => {
   const [msg, setMsg] = useState<string>("");
