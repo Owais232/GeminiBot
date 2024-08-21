@@ -1,3 +1,4 @@
+// ChatBot.tsx
 import React, { useState, useEffect, useRef } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View, FlatList, SafeAreaView, Animated } from "react-native";
 
@@ -5,8 +6,7 @@ type Message = {
   text: string;
   sender: "user" | "gemini";
 };
-const GEMINI_API_KEY = "Use our Own key"; 
-
+const GEMINI_API_KEY = "AIzaSyCoUrY_KJ-qHzDEuCm9ohcbwd2utYdQ6V0"; 
 
 const ChatBot = () => {
   const [msg, setMsg] = useState<string>("");
@@ -108,7 +108,7 @@ const ChatBot = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#333',
+    backgroundColor: 'white',
     padding: 10,
   },
   welcomeContainer: {
@@ -119,12 +119,12 @@ const styles = StyleSheet.create({
   welcomeText: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: 'white',
+    color: 'black',
   },
   messagesContainer: {
     paddingBottom: 20,
     flexGrow: 1,
-    justifyContent: 'flex-end', // Pushes FlatList content to bottom initially
+    justifyContent: 'flex-end',
   },
   message: {
     maxWidth: '80%',
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     padding: 10,
-    backgroundColor: '#444',
+    backgroundColor: '#C8C8C8',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },

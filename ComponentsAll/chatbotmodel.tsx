@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Modal, View, Image, TouchableOpacity, StyleSheet, Text } from 'react-native';
-import ChatBot from './ComponentsAll/chatbot'; 
+import ChatBot from './ComponentsAll/chatbot'; // Update with the correct path to your ChatBot file
+
 const App = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <View style={styles.container}>
-      <Text style={{fontSize:30}}>Welcome to our chat bot</Text>
+      <Text>Welcome to our chat bot</Text>
       
       <TouchableOpacity
         style={styles.floatingButton}
@@ -53,31 +54,31 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 100,
-    height: 200,
+    height: 100,
     borderRadius: 50,
   },
   modalContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
   },
   modalContent: {
     width: '90%',
     height: '90%',
     backgroundColor: 'white',
     padding: 10,
-    position: 'relative',
+    position: 'relative', // Ensures that the closeButton is positioned relative to this container
     borderRadius: 20,
   },
   closeButton: {
     position: 'absolute',
     top: 10,
     left: 10,
-
+     // Temporary color for visibility
     padding: 10,
     borderRadius: 20,
-    zIndex: 1100, 
+    zIndex: 1100, // Ensure it's above other elements
   },
   closeText: {
     color: 'black',
